@@ -1,0 +1,84 @@
+body {
+    background-color: #000;
+}
+
+#orbit {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: relative;
+    left: 500px;
+    top: 100px;
+    width: 500px;
+    height: 500px;
+    animation: earthh 10s ease-in-out infinite;
+}
+
+#btn button {
+    width: 200px;
+    padding: 8px;
+    color: #fff;
+    background-color: blue;
+    border: none;
+    border-radius: 20px;
+}
+
+#btn a {
+    color: #fff;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#sun {
+    background-color: yellow;
+    border-radius: 50%;
+    left: 220px;
+    top: 200px;
+    width: 75px;
+    height: 75px;
+    position: relative;
+}
+
+#earth {
+    background-color: blue;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    position: relative;
+    animation: earthh 10s ease-in-out infinite;
+}
+.pata1 {
+    position: relative;
+    background-color: green;
+    width: 36px;
+    height: 33px;
+    left: 25px;
+    top: 12px;
+    border-radius: 23px 0;
+}
+
+.pata2 {
+    position: relative;
+    background-color: green;
+    width: 16px;
+    height: 18px;
+    left:31px;
+    top: 18px;
+    border-radius: 23px 12px;
+}
+
+@keyframes earthh {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 1000px) {
+    #orbit {
+        left: 10px;
+    }
+}
